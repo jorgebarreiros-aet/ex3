@@ -25,7 +25,7 @@ stage('Checkout'){
 			return true
 		   }
 		catch(excp){
-			echo 'can't connect' 
+			echo 'can\'t connect' 
 			return false
 		}
 	      }
