@@ -20,11 +20,12 @@ stage('Checkout'){
 	timeout(time: 1, unit: 'MINUTES'){
 		waitUntil{
 		try{
-			git branch: resp, url: 'https://github.com/jorgebarreiros-aet/jenkins-hello.git'
-			
+			git branch: resp, url: 'https://github.com/jorgebarreiros-aet/jenkins-helloworld.git'
+			echo 'checkout successful'
 			return true
 		   }
 		catch(excp){
+			echo 'can't connect' 
 			return false
 		}
 	      }
