@@ -1,6 +1,6 @@
 
 node{
-stage('Checkout'){
+stage('CheckoutSCM'){
     def resp
    
     try{
