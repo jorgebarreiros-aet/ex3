@@ -20,7 +20,7 @@ stage('Checkout'){
 	timeout(time: 1, unit: 'MINUTES'){
 		waitUntil{
 		try{
-			git branch: resp, url: 'https://github.com/jorgebarreiros-aet/ex3.git'
+			git branch: resp, url: 'https://github.com/jorgebarreiros-aet/jenkins-hello.git'
 			
 			return true
 		   }
