@@ -20,6 +20,7 @@ stage('Checkout'){
 	timeout(time: 1, unit: 'MINUTES'){
 		waitUntil{
 		try{
+			echo 'trying to get branch:'+resp
 			git branch: resp, url: 'https://github.com/jorgebarreiros-aet/jenkins-helloworld.git'
 			echo 'checkout successful'
 			return true
